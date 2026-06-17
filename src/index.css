@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Damion&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -7,9 +9,9 @@
   --color-industrial: #26292B;
   --color-btnhoover: #6A8E7F;
   --color-coral: #ED6A5A;
-  
+  --font-damion: "Damion", cursive;
   --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
 }
 
 html {

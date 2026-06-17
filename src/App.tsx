@@ -1,23 +1,17 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
+import { Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import ProductionJourney from './components/ProductionJourney';
-import EditorialTrust from './components/EditorialTrust';
-import ProductGallery from './components/ProductGallery';
-import Footer from './components/Footer';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import CVPage from './pages/CVPage';
+import Studio from './pages/Studio';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-paper text-charcoal font-sans selection:bg-industrial selection:text-white">
-      <Navbar />
-      <Hero />
-      <ProductGallery />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cv" element={<CVPage />} />
+      <Route path="/projekt" element={<Projects />} />
+      <Route path="/studio" element={<Studio />} />
+    </Routes>
   );
 }
-
