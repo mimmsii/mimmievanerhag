@@ -7,8 +7,8 @@ export default function CVPage() {
     <>
       <Navbar />
 
-      <main className="pt-30 bg-charcoal/22">
-        <h1 className="text-5xl font-serif text-center pb-20">
+      <main className="pt-25 bg-sand">
+        <h1 className="text-4xl font-light underline underline-offset-6 decoration-2 decoration-solid font-sans text-center pb-15">
           CV
         </h1>
         <CV />

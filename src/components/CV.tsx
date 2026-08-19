@@ -3,7 +3,7 @@ import AboutImage from "../assets/MimmieVanerhagAbout.png";
 
 export default function AboutMeSection() {
   return (
-    <section className="py-24 md:py-32 bg-paper">
+    <section className="py-24 md:py-26 bg-paper">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
           {/* Left column */}
@@ -28,13 +28,12 @@ export default function AboutMeSection() {
 
             {/* Kontaktuppgifter */}
             <div className="mt-10">
-              <h3 className="font-serif text-2xl text-charcoal mb-6">
-                Kontakt
-              </h3>
 
               <div className="space-y-2 text-charcoal/80">
                 <p className="font-medium text-charcoal">Mimmie Vänerhag</p>
 
+                <p>1993-09-30</p>
+                
                 <p>Norra kustvägen 1013</p>
 
                 <p>0708 68 81 46</p>
@@ -74,7 +73,7 @@ export default function AboutMeSection() {
                 Teknik har länge varit ett intresse, och jag motiveras av att
                 förstå hur saker fungerar och kan förbättras. Som utvecklare
                 kommer mina styrkor till sin rätt genom struktur, tydlighet och
-                en känsla för design som fyller en funktion.
+                en känsla för design som fyller ett behov.
               </p>
             </div>
 
@@ -143,6 +142,34 @@ export default function AboutMeSection() {
                       AI-verktyg
                     </p>
                   </div>
+
+                  <div>
+                    <h4 className="font-medium text-charcoal mb-2">
+                      Tull och lagersystem
+                    </h4>
+                    <p className="text-charcoal/70">
+                      KSD, SAP, Astro
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-medium text-charcoal mb-2">
+                      Affärssystem
+                    </h4>
+                    <p className="text-charcoal/70">
+                      Fortnox, Visma
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-medium text-charcoal mb-2">
+                      Övrigt
+                    </h4>
+                    <p className="text-charcoal/70">
+                      Microsoft 365
+                    </p>
+                  </div>
+
                 </div>
               </div>
 
@@ -250,7 +277,7 @@ export default function AboutMeSection() {
               }}
             >
               <p className="font-serif italic text-2xl text-charcoal">
-                "Som utvecklare uppskattar jag att kombinera förståelse,
+                "Som utvecklare uppskattar jag att kombinera produktförståelse,
                 struktur och kreativitet för att skapa lösningar som människor
                 faktiskt vill använda."
               </p>
