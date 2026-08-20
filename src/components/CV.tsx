@@ -32,15 +32,15 @@ export default function AboutMeSection() {
               <div className="space-y-2 text-charcoal/80">
                 <p className="font-medium text-charcoal">Mimmie Vänerhag</p>
 
-                <p>1993-09-30</p>
+                <p>1993.09.30</p>
                 
-                <p>Norra kustvägen 1013</p>
+                <p>Norra kustvägen 1013, Nyhamnsläge</p>
 
                 <p>0708 68 81 46</p>
 
                 <p>mimmie.vanerhag@gmail.com</p>
 
-                <p>LinkedIn</p>
+                <a href="https://www.linkedin.com/in/mimmie-vanerhag/">LinkedIn</a>
               </div>
             </div>
           </motion.div>

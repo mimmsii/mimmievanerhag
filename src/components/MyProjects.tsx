@@ -1,5 +1,16 @@
 import { motion } from 'motion/react';
 import { ArrowUpRight, Code2, Layers, Sparkles } from 'lucide-react';
+import swedsafeMain from '../assets/swedsafe-monitor-new.webp';
+import swedsafeSecondary from '../assets/swedsafe-tablet.png';
+import returnitMain from '../assets/returnit-laptop.webp';
+import returnitSecondary from '../assets/returnit-mobile.jpg';
+import kullensbryggeriMain from '../assets/kullensbryggeri-laptop.jpg';
+import kullensbryggeriSecondary from '../assets/kullensbryggeri-mobile.jpg';
+import florafrojdMain from '../assets/florafrojd-monitor.jpg';
+import florafrojdSecondary from '../assets/florafrojd-mobile.jpg';
+import optimarkMain from '../assets/optimark-monitor.jpg';
+import swedlogMain from '../assets/swedlog-desktop.webp';
+import swedlogSecondary from '../assets/swedlog-cookiebanner.png';
 
 interface Project {
   id: string;
@@ -19,111 +30,106 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: '01',
-    tag: 'E-handel & Frontend',
-    tagColor: 'border-[#f19737] text-[#f19737] bg-[#f19737]/10',
-    title: 'Nordic Essence',
-    subtitle: 'Minimalistisk e-handelsplattform för hållbar inredning',
+    tag: 'Frontend & Backend',
+    tagColor: 'text-[#637863]',
+    title: 'SwedSafe',
+    subtitle: 'Webbplats åt global aktör',
     description:
-      'Utvecklad från grunden med fokus på optimerad prestanda, sömlösa mikrointeraktioner och tillgänglighet enligt WCAG 2.1.',
-    builtWith: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      'Utvecklad från grunden med fokus på användarvänlighet och skalbarhet. Stor vikt lades vid dynamiska lösningar, scroll-baserade animationer och responsivitet.',
+    builtWith: ['WordPress Divi', 'CSS', 'JavaScript', 'GSAP'],
     highlights: [
-      'Custom checkout-flöde med live-validering',
-      'Lighthouse Score: 98/100 på alla sidor',
-      'Optimerad bildladdning med blur-up placeholders'
+      'Utvecklad ur kundens perspektiv',
+      'GSAP-animationer',
+      'Pixelperfekt efter mockup'
     ],
-    mainImage: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80',
-    secondaryImage: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&auto=format&fit=crop&q=80',
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com'
+    mainImage: swedsafeMain,
+    secondaryImage: swedsafeSecondary,
+    liveUrl: 'https://swedsafe.se'
   },
   {
     id: '02',
-    tag: 'Webbapp & Dashboard',
-    tagColor: 'border-[#fea0da] text-[#fea0da] bg-[#fea0da]/10',
-    title: 'Studio Pulse',
-    subtitle: 'Resurshantering och tidsplanering för kreativa byråer',
+    tag: 'E-handel',
+    tagColor: 'text-[#db0060]',
+    title: 'Returnit',
+    subtitle: 'Webbshop för ny produkt',
     description:
-      'En interaktiv SaaS-dashboard med dynamiska datavyer, drag-and-drop-kalendrar och realtidsuppdateringar via API.',
-    builtWith: ['React', 'Next.js', 'Tailwind CSS', 'Lucide Icons'],
+      'En ny webbshop med fokus på produkten och dess syfte. Utvecklingen riktades särskilt på flöde och användarvänlighet för kunderna. ',
+    builtWith: ['WordPress Divi', 'WooCommerce', 'CSS', 'JavaScript'],
     highlights: [
-      'Drag-and-drop schemaläggning',
-      'Dark & light mode med CSS-variabler',
-      'Modulär arkitektur byggd med Atomic Design'
+      'Vyer baserade på inloggad eller utloggad användare',
+      'Skräddarsydd CSS',
+      'Hantering av flöden för kund och företag'
     ],
-    mainImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80',
-    liveUrl: 'https://example.com'
+    mainImage: returnitMain,
+    secondaryImage: returnitSecondary,
+    liveUrl: 'https://returnit.nu'
   },
   {
     id: '03',
-    tag: 'Varumärke & Webbdesign',
-    tagColor: 'border-[#215fc3] text-[#215fc3] bg-[#215fc3]/10',
-    title: 'Kafferosteriet Skåne',
-    subtitle: 'Interaktiv digital identitet och prenumerationsportal',
+    tag: 'Frontend & Webbdesign',
+    tagColor: 'text-[#CC830F]',
+    title: 'Kullens Bryggeri',
+    subtitle: 'Webbplats åt lokalt ölbryggeri',
     description:
-      'Ett konceptuellt webbprojekt med scroll-baserade animationer och en anpassad produktkonfigurator för månatliga kaffeleveranser.',
-    builtWith: ['HTML5', 'Tailwind CSS', 'JavaScript', 'GSAP'],
+      'En ny webbplats med fokus på att framhäva företagets hantverksmässiga identitet. Extra vikt lades på användarvänlighet, anpassad CSS & JavaScript med subtila animationer.',
+    builtWith: ['WordPress Divi', 'CSS', 'JavaScript'],
     highlights: [
-      'Scroll-drivna parallax-sektioner',
-      'Skräddarsydd quiz för val av kaffeböna',
-      'Snabb laddtid med sub-second page transitions'
+      'Responsivitet mellan olika skärmar',
+      'Skräddarsydd meny med animationer',
+      'Enkel för kund att underhålla'
     ],
-    mainImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&auto=format&fit=crop&q=80',
-    secondaryImage: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&auto=format&fit=crop&q=80',
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com'
+    mainImage: kullensbryggeriMain,
+    secondaryImage: kullensbryggeriSecondary,
   },
   {
     id: '04',
-    tag: 'Fullstack & Auth',
-    tagColor: 'border-[#1FA863] text-[#1FA863] bg-[#1FA863]/10',
-    title: 'Aura Journal',
-    subtitle: 'Minimalistisk dagboks- och reflektionsapp',
+    tag: 'Webbdesign, Frontend & Backend',
+    tagColor: 'text-[#b02121]',
+    title: 'Flora & Fröjd',
+    subtitle: 'En fiktiv webbshop med produkter lagrade i databas',
     description:
-      'En säker plats för daglig reflektion med full end-to-end kryptering och anpassningsbara humörgrafer över tid.',
-    builtWith: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
+      'Mitt första större React-projekt där målet var att skapa en fiktiv webbshop som lagrade sina produkter i en databas.',
+    builtWith: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Node.js', 'Express', 'REST API', 'SQLite'],
     highlights: [
-      'Autentisering via JWT och session cookies',
-      'Datavisualisering med SVG-kurvor',
-      'Full offline-support via Service Worker'
+      'Sökfunktion av produkter',
+      'Förståelse för struktur i en databas',
+      'SQL-kommandon för att hantera stor mängd produktdata'
     ],
-    mainImage: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1200&auto=format&fit=crop&q=80',
-    githubUrl: 'https://github.com'
+    mainImage: florafrojdMain,
+    secondaryImage: florafrojdSecondary,
+    githubUrl: 'https://github.com/mimmsii/florafrojd'
   },
   {
     id: '05',
-    tag: 'Komponentbibliotek',
-    tagColor: 'border-[#808bc2] text-[#808bc2] bg-[#808bc2]/10',
-    title: 'Canvas UI Kit',
-    subtitle: 'Ett tillgängligt och tema-anpassat designsystem',
+    tag: 'Cookiebanner',
+    tagColor: 'text-[#295c00]',
+    title: 'Swedlog',
+    subtitle: 'En cookiebanner byggd åt företaget Swedlog',
     description:
-      'Ett öppet komponentbibliotek med fokus på rena API:er, tangentbordsnavigering och enkel konfiguration via design tokens.',
-    builtWith: ['TypeScript', 'React', 'Storybook', 'Tailwind CSS'],
+      'En webbplats som saknade cookiebanner behövde en manuellt byggd lösning. Fokus låg på att testa att cookies laddades korrekt beroende på användarens val.',
+    builtWith: ['WebFlow', 'CSS', 'JavaScript'],
     highlights: [
-      'Över 30 fullt tillgängliga komponenter',
-      'Testat med Jest & React Testing Library',
-      'Automatiserad dokumentation i Storybook'
+      'Webbläsarens inspektera-verktyg',
+      'Testning',
     ],
-    mainImage: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop&q=80',
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com'
+    mainImage: swedlogMain,
+    secondaryImage: swedlogSecondary,
+    liveUrl: 'https://swedlog.se',
   },
   {
     id: '06',
-    tag: 'Event & Interaktion',
-    tagColor: 'border-[#f19737] text-[#f19737] bg-[#f19737]/10',
-    title: 'Lumina Fest',
-    subtitle: 'Mobilanpassad festivalguide med interaktiv tidslinje',
+    tag: 'Tailwind CSS',
+    tagColor: 'text-[#BF690D]',
+    title: 'Optimark',
+    subtitle: 'En webbsida byggd med fokus att träna på Tailwind CSS',
     description:
-      'En interaktiv schema-app som låter besökare bygga sitt eget festivalprogram och lyssna på artist-previews direkt i webbläsaren.',
-    builtWith: ['React', 'Framer Motion', 'Web Audio API', 'Tailwind CSS'],
+      'För att bättre lära mig Tailwind CSS byggdes en företagshemsida där fokus var att lära mig mer kring design och animationer.',
+    builtWith: ['React', 'Tailwind CSS', 'Framer Motion', 'JavaScript'],
     highlights: [
-      'Filtrering i realtid utan sidomladdningar',
-      'Ljudspelare med Web Audio API',
-      'Responsiv layout för mobil och surfplatta'
+      'Tailwinds designsystem',
+      'Scroll-animationer',
     ],
-    mainImage: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1200&auto=format&fit=crop&q=80',
-    secondaryImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop&q=80',
-    liveUrl: 'https://example.com'
+    mainImage: optimarkMain,
   }
 ];
 
@@ -153,7 +159,7 @@ export default function MyProjects() {
                   <img
                     src={project.mainImage}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-102"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-charcoal/5 group-hover:bg-transparent transition-colors duration-500" />
@@ -161,7 +167,7 @@ export default function MyProjects() {
 
                 {/* Sekundärbild */}
                 {project.secondaryImage && (
-                  <div className="hidden sm:block absolute -bottom-4 right-0 sm:-bottom-6 sm:right-2 w-32 md:w-44 aspect-square overflow-hidden shadow-2xl border-1 border-paper z-10 bg-paper">
+                  <div className="hidden sm:block absolute -bottom-4 right-0 sm:-bottom-8 sm:right-4 w-32 md:w-64 aspect-square overflow-hidden shadow-2xl border-1 border-paper z-10 bg-paper">
                     <img
                       src={project.secondaryImage}
                       alt=""
@@ -174,28 +180,25 @@ export default function MyProjects() {
 
               {/* Text & Detaljer */}
               <div
-                className={`lg:col-span-5 space-y-6 ${
+                className={`lg:col-span-5 space-y-5 ${
                   isReversed ? 'lg:order-1' : 'lg:order-2'
                 }`}
               >
                 {/* Kategori-tagg & Siffra */}
-                <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center justify-between">
                   <span
-                    className={`text-xs uppercase tracking-widest px-3 py-1 rounded-full border backdrop-blur-xs font-medium ${project.tagColor}`}
+                    className={`text-xs uppercase tracking-widest backdrop-blur-xs font-medium -mb-1 ${project.tagColor}`}
                   >
                     {project.tag}
-                  </span>
-                  <span className="text-sm font-light text-charcoal/40 font-mono">
-                    /{project.id}
                   </span>
                 </div>
 
                 {/* Rubriker */}
                 <div className="space-y-2">
-                  <h2 className="text-3xl md:text-4xl font-light tracking-tight text-charcoal">
+                  <h2 className="text-3xl md:text-4xl font-serif tracking-tight text-charcoal">
                     {project.title}
                   </h2>
-                  <p className="text-base text-charcoal/80 italic font-light">
+                  <p className="text-base pt-2 text-charcoal/80 italic">
                     {project.subtitle}
                   </p>
                 </div>
@@ -205,7 +208,7 @@ export default function MyProjects() {
                 </p>
 
                 {/* Highlights */}
-                <div className="space-y-2 pt-2 border-t border-charcoal/10">
+                <div className="space-y-2 pt-4 border-t border-charcoal/10">
                   <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/50 font-medium">
                     <Sparkles size={13} />
                     Highlights & Lärdomar

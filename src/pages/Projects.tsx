@@ -7,10 +7,7 @@ export default function Projects() {
     <>
       <Navbar />
 
-      <main className="pt-25 bg-sand">
-        <h1 className="text-4xl font-light underline underline-offset-6 decoration-2 decoration-solid font-sans uppercase text-center pb-15">
-          Projekt
-        </h1>
+      <main className="pt-21 bg-gradient-to-l from-industrial/50 to-sandlight">
 
         <MyProjects />
       </main>
