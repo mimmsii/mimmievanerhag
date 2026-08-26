@@ -7,10 +7,10 @@ export default function Footer() {
         
         {/* Main CTA */}
         <div className="border-b border-white/10 pb-24 mb-10">
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-7xl mb-12 leading-none">
+          <h2 className="font-serif text-paper/90 text-3xl md:text-5xl lg:text-7xl mb-12 leading-none">
             Vill ni veta mer?
             <br />
-            <span className="text-paper/70 italic lg:text-6xl">
+            <span className="text-paper italic lg:text-5xl">
               Kontakta mig gärna!
             </span>
           </h2>

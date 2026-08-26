@@ -29,7 +29,7 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    id: '01',
+    id: 'swedsafe',
     tag: 'Frontend & Backend',
     tagColor: 'text-[#637863]',
     title: 'SwedSafe',
@@ -38,7 +38,7 @@ const projectsData: Project[] = [
       'Utvecklad från grunden med fokus på användarvänlighet och skalbarhet. Stor vikt lades vid dynamiska lösningar, scroll-baserade animationer och responsivitet.',
     builtWith: ['WordPress Divi', 'CSS', 'JavaScript', 'GSAP'],
     highlights: [
-      'Utvecklad ur kundens perspektiv',
+      'Utvecklad med stort affärsfokus',
       'GSAP-animationer',
       'Pixelperfekt efter mockup'
     ],
@@ -47,13 +47,13 @@ const projectsData: Project[] = [
     liveUrl: 'https://swedsafe.se'
   },
   {
-    id: '02',
+    id: 'returnit',
     tag: 'E-handel',
     tagColor: 'text-[#db0060]',
     title: 'Returnit',
     subtitle: 'Webbshop för ny produkt',
     description:
-      'En ny webbshop med fokus på produkten och dess syfte. Utvecklingen riktades särskilt på flöde och användarvänlighet för kunderna. ',
+      'En webbshop utvecklad från grunden med fokus på produkten och dess syfte. Utvecklingen riktades särskilt på flöde och användarvänlighet utifrån köpprocessen. ',
     builtWith: ['WordPress Divi', 'WooCommerce', 'CSS', 'JavaScript'],
     highlights: [
       'Vyer baserade på inloggad eller utloggad användare',
@@ -65,7 +65,7 @@ const projectsData: Project[] = [
     liveUrl: 'https://returnit.nu'
   },
   {
-    id: '03',
+    id: 'kullens-bryggeri',
     tag: 'Frontend & Webbdesign',
     tagColor: 'text-[#CC830F]',
     title: 'Kullens Bryggeri',
@@ -82,7 +82,7 @@ const projectsData: Project[] = [
     secondaryImage: kullensbryggeriSecondary,
   },
   {
-    id: '04',
+    id: 'flora-frojd',
     tag: 'Webbdesign, Frontend & Backend',
     tagColor: 'text-[#b02121]',
     title: 'Flora & Fröjd',
@@ -100,7 +100,7 @@ const projectsData: Project[] = [
     githubUrl: 'https://github.com/mimmsii/florafrojd'
   },
   {
-    id: '05',
+    id: 'swedlog',
     tag: 'Cookiebanner',
     tagColor: 'text-[#295c00]',
     title: 'Swedlog',
@@ -117,7 +117,7 @@ const projectsData: Project[] = [
     liveUrl: 'https://swedlog.se',
   },
   {
-    id: '06',
+    id: 'optimark',
     tag: 'Tailwind CSS',
     tagColor: 'text-[#BF690D]',
     title: 'Optimark',
@@ -143,11 +143,12 @@ export default function MyProjects() {
           return (
             <motion.article
               key={project.id}
+              id={project.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center"
+              className="scroll-mt-36 grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center"
             >
               {/* Bildsektion */}
               <div

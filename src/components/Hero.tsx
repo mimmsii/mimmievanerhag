@@ -23,7 +23,7 @@ export default function Hero() {
         style={{ y, scale }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-paper/20 via-transparent to-paper/80" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-paper/25 via-transparent to-paper/60" />
 
         <motion.img
           src={HeroImage}

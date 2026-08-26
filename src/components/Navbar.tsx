@@ -1,11 +1,14 @@
 import { motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const navItems = [
     { label: 'Projekt', path: '/projekt' },
@@ -50,7 +53,7 @@ export default function Navbar() {
               key={item.path}
               to={item.path}
               className={`text-xs uppercase tracking-[0.2em] font-medium transition-colors relative group ${
-                isScrolled
+                isScrolled || !isHomePage
                   ? 'text-charcoal hover:text-industrial'
                   : 'text-white hover:text-white'
               }`}
@@ -59,7 +62,7 @@ export default function Navbar() {
 
               <span
                 className={`absolute -bottom-1 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${
-                  isScrolled ? 'bg-charcoal' : 'bg-white'
+                  isScrolled || !isHomePage ? 'bg-charcoal' : 'bg-white'
                 }`}
               />
             </Link>
