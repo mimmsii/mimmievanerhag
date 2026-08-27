@@ -7,7 +7,7 @@ export default function Projects() {
     <>
       <Navbar />
 
-      <main className="mt-20 bg-paper">
+      <main>
 
         <MyProjects />
       </main>

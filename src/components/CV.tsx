@@ -3,7 +3,7 @@ import AboutImage from "../assets/MimmieVanerhagAbout.png";
 
 export default function AboutMeSection() {
   return (
-    <section className="py-24 md:py-26 bg-paper">
+    <section className="bg-paper pt-24 md:pt-28 lg:pt-36 pb-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
           {/* Left column */}
@@ -18,7 +18,7 @@ export default function AboutMeSection() {
           >
             <div className="w-[74%] ml-auto">
               <span className="text-industrial uppercase tracking-[0.2em] text-xs font-medium block mb-4">
-                Om mig
+                — CV
               </span>
 
               <img

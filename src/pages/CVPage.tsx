@@ -7,7 +7,7 @@ export default function CVPage() {
     <>
       <Navbar />
 
-      <main className="mt-20 bg-sand">
+      <main>
         <CV />
       </main>
 

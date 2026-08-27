@@ -7,7 +7,7 @@ export default function Studio() {
     <>
         <Navbar />
 
-        <main className="pt-40 text-center">
+        <main>
             <StudioHero />
         </main>
 
