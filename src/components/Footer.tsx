@@ -1,13 +1,14 @@
 import { ArrowRight } from 'lucide-react';
+import { Mail, Phone, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer id="kontakt" className="bg-charcoal text-paper pt-32 pb-12">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
         
         {/* Main CTA */}
         <div className="border-b border-white/10 pb-24 mb-10">
-          <h2 className="font-serif text-paper/90 text-3xl md:text-5xl lg:text-7xl mb-12 leading-none">
+          <h2 className="font-serif text-paper/95 text-3xl md:text-5xl lg:text-7xl mb-12 leading-none">
             Vill ni veta mer?
             <br />
             <span className="text-paper italic lg:text-5xl">
@@ -19,27 +20,40 @@ export default function Footer() {
 
             {/* Kontaktuppgifter */}
             <div className="space-y-4">
+              
               <a
                 href="mailto:mimmie.vanerhag@gmail.com"
-                className="block text-paper text-lg hover:text-white/70 transition-colors"
+                className="flex items-center gap-4 text-paper text-lg hover:text-white/70 transition-colors group"
               >
-                mimmie.vanerhag@gmail.com
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-paper text-charcoal transition-transform duration-300 group-hover:scale-105">
+                  <Mail size={18} />
+                </span>
+
+                <span>mimmie.vanerhag@gmail.com</span>
               </a>
 
               <a
                 href="tel:0708688146"
-                className="block text-paper text-lg hover:text-white/70 transition-colors"
+                className="flex items-center gap-4 text-paper text-lg hover:text-white/70 transition-colors group"
               >
-                0708 68 81 46
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-paper text-charcoal transition-transform duration-300 group-hover:scale-105">
+                  <Phone size={18} />
+                </span>
+
+                <span>0708 68 81 46</span>
               </a>
 
               <a
-                href="www.linkedin.com/in/mimmie-vänerhag-7b6a53274"
+                href="https://www.linkedin.com/in/mimmie-vanerhag"
                 target="_blank"
                 rel="noreferrer"
-                className="block text-paper font-sans text-lg hover:text-white/70 transition-colors"
+                className="flex items-center gap-4 text-paper text-lg hover:text-white/70 transition-colors group"
               >
-                LinkedIn
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-paper text-charcoal transition-transform duration-300 group-hover:scale-105">
+                  <Linkedin size={18} />
+                </span>
+
+                <span>LinkedIn</span>
               </a>
             </div>
 

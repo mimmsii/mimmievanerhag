@@ -136,7 +136,7 @@ const projectsData: Project[] = [
 export default function MyProjects() {
   return (
     <section className="w-full bg-paper py-16 md:py-24">
-      <div className="container mx-auto px-6 md:px-12 space-y-24 md:space-y-36">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 space-y-24 md:space-y-36">
         {projectsData.map((project, index) => {
           const isReversed = index % 2 !== 0;
 
@@ -249,10 +249,10 @@ export default function MyProjects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-charcoal text-paper text-xs uppercase tracking-widest font-medium hover:bg-btnhoover transition-colors duration-300 shadow-sm"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-charcoal/30 text-charcoal text-xs uppercase tracking-widest font-medium hover:bg-charcoal hover:text-paper transition-all duration-300 bg-paper"
                     >
                       Visa Live
-                      <ArrowUpRight size={15} />
+                      <ArrowUpRight size={14} />
                     </a>
                   )}
 
@@ -261,9 +261,9 @@ export default function MyProjects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-charcoal/30 text-charcoal text-xs uppercase tracking-widest font-medium hover:bg-charcoal hover:text-paper transition-all duration-300 bg-paper"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-charcoal/30 text-charcoal text-xs uppercase tracking-widest font-medium hover:bg-charcoal hover:text-paper transition-all duration-300 bg-paper"
                     >
-                      <Code2 size={15} />
+                      <Code2 size={14} />
                       Källkod
                     </a>
                   )}

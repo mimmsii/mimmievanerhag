@@ -31,7 +31,7 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6 transition-all duration-300 flex justify-between items-center ${
           isScrolled
             ? 'bg-paper/80 backdrop-blur-md border-b border-charcoal/5'
@@ -70,7 +70,7 @@ export default function Navbar() {
 
           <a
             href="/#kontakt"
-            className="rounded-3xl cursor-pointer bg-paper/30 border border-charcoal text-charcoal px-6 py-2 text-xs font-medium uppercase tracking-widest hover:bg-charcoal hover:text-paper transition-colors duration-300"
+            className="rounded-3xl cursor-pointer bg-paper/50 border border-charcoal text-charcoal px-6 py-2 text-xs font-medium uppercase tracking-widest hover:bg-charcoal hover:text-paper transition-colors duration-300"
           >
             Kontakt
           </a>

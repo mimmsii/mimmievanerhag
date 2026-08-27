@@ -37,7 +37,7 @@ const featuredProjects = [
 export default function ProductGallery() {
   return (
     <section className="py-24 md:py-32 bg-paper">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
 
         {/* Header */}
         <div className="mb-12 md:mb-16">

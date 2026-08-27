@@ -4,43 +4,46 @@ import AboutImage from "../assets/MimmieVanerhagAbout.png";
 export default function AboutMeSection() {
   return (
     <section className="py-24 md:py-26 bg-paper">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
           {/* Left column */}
           <motion.div
-            className="md:col-span-4"
+            className="md:col-span-4 md:justify-self-end"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
-              duration: 1,
-              delay: 0.5,
+              duration: 0.3,
+              delay: 0.1,
             }}
           >
-            <span className="text-industrial uppercase tracking-[0.2em] text-xs font-medium block mb-4">
-              Om mig
-            </span>
+            <div className="w-[74%] ml-auto">
+              <span className="text-industrial uppercase tracking-[0.2em] text-xs font-medium block mb-4">
+                Om mig
+              </span>
 
-            <img
-              src={AboutImage}
-              alt="Mimmie Vänerhag"
-              className="w-full aspect-[4/5] object-cover mt-8"
-            />
+              <img
+                src={AboutImage}
+                alt="Mimmie Vänerhag"
+                className="w-full aspect-[4/5] object-cover mt-8"
+              />
 
-            {/* Kontaktuppgifter */}
-            <div className="mt-10">
+              {/* Kontaktuppgifter */}
+              <div className="mt-10">
+                <div className="space-y-2 text-charcoal/80">
+                  <p className="font-medium text-charcoal">Mimmie Vänerhag</p>
 
-              <div className="space-y-2 text-charcoal/80">
-                <p className="font-medium text-charcoal">Mimmie Vänerhag</p>
+                  <p>1993.09.30</p>
 
-                <p>1993.09.30</p>
-                
-                <p>Norra kustvägen 1013, Nyhamnsläge</p>
+                  <p>Norra kustvägen 1013, Nyhamnsläge</p>
 
-                <p>0708 68 81 46</p>
+                  <p>0708 68 81 46</p>
 
-                <p>mimmie.vanerhag@gmail.com</p>
+                  <p>mimmie.vanerhag@gmail.com</p>
 
-                <a href="https://www.linkedin.com/in/mimmie-vanerhag/">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/mimmie-vanerhag/">
+                    LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -52,7 +55,7 @@ export default function AboutMeSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 1,
-              delay: 0.5,
+              delay: 0.3,
               ease: [0.16, 1, 0.3, 1],
             }}
           >
@@ -64,7 +67,7 @@ export default function AboutMeSection() {
 
             <div className="max-w-3xl space-y-6 text-charcoal/80 text-lg leading-relaxed">
               <p>
-                Jag är en driven person som efter flera år inom
+                Jag är en driven och nyfiken person som efter flera år inom
                 restaurangbranschen och entreprenörskap valde att utbilda mig
                 till frontendutvecklare.
               </p>
@@ -268,7 +271,7 @@ export default function AboutMeSection() {
 
             {/* Quote / Highlight */}
             <motion.div
-              className="mt-16 border-l-2 border-industrial pl-6"
+              className="mt-18 border-l-2 border-industrial pl-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
@@ -276,7 +279,7 @@ export default function AboutMeSection() {
                 duration: 0.8,
               }}
             >
-              <p className="font-serif italic text-2xl text-charcoal">
+              <p className="font-serif text-xl md:text-2xl text-charcoal">
                 "Som utvecklare uppskattar jag att kombinera produktförståelse,
                 struktur och kreativitet för att skapa lösningar som människor
                 faktiskt vill använda."

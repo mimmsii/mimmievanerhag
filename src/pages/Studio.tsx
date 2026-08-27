@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import StudioHero from '../components/StudioHero';
 
 export default function Studio() {
   return (
@@ -7,8 +8,7 @@ export default function Studio() {
         <Navbar />
 
         <main className="pt-40 text-center">
-            <h1 className="font-serif text-5xl">Studio</h1>
-            <p className="mt-4">Kommer snart.</p>
+            <StudioHero />
         </main>
 
         <Footer />
