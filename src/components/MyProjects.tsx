@@ -66,7 +66,7 @@ const projectsData: Project[] = [
   },
   {
     id: 'kullens-bryggeri',
-    tag: 'Frontend & Webbdesign',
+    tag: 'Frontend',
     tagColor: 'text-[#CC830F]',
     title: 'Kullens Bryggeri',
     subtitle: 'Webbplats åt lokalt ölbryggeri',
