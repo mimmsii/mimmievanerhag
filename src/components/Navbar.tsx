@@ -16,6 +16,14 @@ export default function Navbar() {
     { label: 'Studio', path: '/studio' },
   ];
 
+  const handleContactClick = () => {
+    document.getElementById('kontakt')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+
+    setIsMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -68,12 +76,12 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <a
-            href="/#kontakt"
+          <button
+            onClick={handleContactClick}
             className="rounded-3xl cursor-pointer bg-paper/50 border border-charcoal text-charcoal px-6 py-2 text-xs font-medium uppercase tracking-widest hover:bg-charcoal hover:text-paper transition-colors duration-300"
           >
             Kontakt
-          </a>
+          </button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -96,20 +104,19 @@ export default function Navbar() {
             <Link
               key={item.path}
               to={item.path}
-              className="font-serif text-4xl text-charcoal hover:text-industrial transition-colors"
+              className="font-serif text-3xl tracking-[0.01em] text-charcoal hover:text-industrial transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.label}
             </Link>
           ))}
 
-          <a
-            href="/#kontakt"
-            className="font-serif text-4xl text-charcoal hover:text-industrial transition-colors"
-            onClick={() => setIsMenuOpen(false)}
+          <button
+            onClick={handleContactClick}
+            className="font-serif text-3xl tracking-[0.01em] text-charcoal hover:text-industrial transition-colors"
           >
             Kontakt
-          </a>
+          </button>
         </motion.div>
       )}
     </>

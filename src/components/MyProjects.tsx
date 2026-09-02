@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowUpRight, Code2, Layers, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Code2, Layers, MonitorCheck } from 'lucide-react';
 import swedsafeMain from '../assets/swedsafe-monitor-new.webp';
 import swedsafeSecondary from '../assets/swedsafe-tablet.png';
 import returnitMain from '../assets/returnit-laptop.webp';
@@ -158,7 +158,7 @@ export default function MyProjects() {
                   isReversed ? 'lg:order-2' : 'lg:order-1'
                 }`}
               >
-                <div className="relative overflow-hidden shadow-xl border border-charcoal/10 bg-paper aspect-4/3 md:aspect-16/10">
+                <div className="relative overflow-hidden shadow-xl border border-charcoal/10 rounded-xs bg-paper aspect-4/3 md:aspect-16/10">
                   <img
                     src={project.mainImage}
                     alt={project.title}
@@ -170,7 +170,7 @@ export default function MyProjects() {
 
                 {/* Sekundärbild */}
                 {project.secondaryImage && (
-                  <div className="hidden sm:block absolute -bottom-4 right-0 sm:-bottom-8 sm:right-4 w-32 md:w-64 aspect-square overflow-hidden shadow-2xl border-1 border-paper z-10 bg-paper">
+                  <div className="hidden sm:block absolute -bottom-4 right-0 sm:-bottom-8 sm:right-4 w-32 md:w-64 aspect-square overflow-hidden shadow-2xl border-1 border-paper rounded-xs z-10 bg-paper">
                     <img
                       src={project.secondaryImage}
                       alt=""
@@ -212,8 +212,8 @@ export default function MyProjects() {
 
                 {/* Highlights */}
                 <div className="space-y-2 pt-4 border-t border-charcoal/10">
-                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/50 font-medium">
-                    <Sparkles size={13} />
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/70 font-medium">
+                    <MonitorCheck size={14} />
                     Highlights & Lärdomar
                   </div>
                   <ul className="space-y-1.5 text-xs md:text-sm font-light text-charcoal/80">
@@ -228,7 +228,7 @@ export default function MyProjects() {
 
                 {/* Teknikstack */}
                 <div className="pt-2">
-                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/50 font-medium mb-3">
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/70 font-medium mb-3">
                     <Layers size={13} />
                     Teknikstack
                   </div>

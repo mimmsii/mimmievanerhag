@@ -8,10 +8,10 @@ export default function Footer() {
         
         {/* Main CTA */}
         <div className="border-b border-white/10 pb-24 mb-10">
-          <h2 className="font-serif text-paper/95 text-3xl md:text-5xl lg:text-7xl mb-12 leading-none">
+          <h2 className="font-serif text-paper/95 text-4xl md:text-5xl lg:text-7xl mb-12 leading-none">
             Vill ni veta mer?
             <br />
-            <span className="text-paper font-serif tracking-[0.02em] font-thin italic lg:text-5xl">
+            <span className="text-paper font-serif tracking-[0.02em] font-thin italic text-2xl md:text-3xl lg:text-5xl">
               Kontakta mig gärna!
             </span>
           </h2>
@@ -23,7 +23,7 @@ export default function Footer() {
               
               <a
                 href="mailto:mimmie.vanerhag@gmail.com"
-                className="flex items-center gap-4 text-paper text-lg hover:text-white/70 transition-colors group"
+                className="flex items-center gap-4 text-paper text-m lg:text-lg hover:text-white/70 transition-colors group"
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-paper text-charcoal transition-transform duration-300 group-hover:scale-105">
                   <Mail size={18} />
@@ -34,7 +34,7 @@ export default function Footer() {
 
               <a
                 href="tel:0708688146"
-                className="flex items-center gap-4 text-paper text-lg hover:text-white/70 transition-colors group"
+                className="flex items-center gap-4 text-paper text-m lg:text-lg hover:text-white/70 transition-colors group"
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-paper text-charcoal transition-transform duration-300 group-hover:scale-105">
                   <Phone size={18} />
@@ -47,7 +47,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/mimmie-vanerhag"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-4 text-paper text-lg hover:text-white/70 transition-colors group"
+                className="flex items-center gap-4 text-paper text-m lg:text-lg hover:text-white/70 transition-colors group"
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-paper text-charcoal transition-transform duration-300 group-hover:scale-105">
                   <Linkedin size={18} />

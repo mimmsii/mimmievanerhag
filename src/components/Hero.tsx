@@ -27,18 +27,21 @@ export default function Hero() {
       >
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-paper/10 via-transparent to-paper/60" />
 
+          {/* Extra ljust lager – endast på mobil */}
+          <div className="absolute inset-0 z-10 bg-paper/60 md:bg-transparent" />
+
         <motion.img
           src={HeroImage}
           alt="Mimmie Vänerhag"
           initial={{ scale: 1.1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.1, ease: 'easeOut' }}
-          className="h-full w-full object-cover opacity-80"
+          className="h-full w-full object-cover object-[70%_center] opacity-80 md:object-center"
         />
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto grid grid-cols-12 gap-4 px-6 md:px-12 lg:px-20">
+      <div className="relative z-20 container mx-auto grid grid-cols-12 gap-4 px-6 md:px-12 lg:px-20 translate-y-6 md:translate-y-0">
         <div className="col-span-12 md:col-span-10 md:start-2">
 
           <div className="overflow-hidden mb-2">

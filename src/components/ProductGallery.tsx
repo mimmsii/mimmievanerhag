@@ -68,7 +68,7 @@ export default function ProductGallery() {
                   <img
                     src={project.img}
                     alt={project.title}
-                    className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-103 group-hover:grayscale-0"
+                    className="h-full w-full object-cover rounded-xs grayscale transition-all duration-700 group-hover:scale-103 group-hover:grayscale-0"
                   />
                 </div>
 

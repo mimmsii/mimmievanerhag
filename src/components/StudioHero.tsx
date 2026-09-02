@@ -2,7 +2,7 @@ import Studioimg from '../assets/monitor.jpg';
 
 export default function StudioHero() {
   return (
-    <section className="min-h-screen bg-paper pt-24 md:pt-28 lg:pt-36 pb-20">
+    <section className="min-h-screen overflow-hidden bg-paper pt-24 md:pt-28 lg:pt-36 pb-20">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
 
         <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2 lg:gap-20">
@@ -15,17 +15,17 @@ export default function StudioHero() {
             </span>
 
             <h1 className="mt-6 font-serif leading-[0.9] text-charcoal">
-              <span className="block text-6xl md:text-7xl">
+              <span className="block text-4xl tracking-[0.01em] md:text-7xl md:tracking-[0em]">
                 Vänerhag Studio
               </span>
 
-              <span className="mt-2 block pt-4 text-3xl italic tracking-[0.01em] md:text-4xl">
+              <span className="block pt-4 md:pt-6 text-2xl italic tracking-[0.01em] md:text-4xl">
                 kommer snart
               </span>
             </h1>
 
             {/* Introduktion */}
-            <div className="mt-10 max-w-xl space-y-6 text-lg leading-relaxed text-charcoal/80">
+            <div className="mt-10 max-w-xl space-y-6 md:text-lg leading-relaxed text-charcoal/80">
 
               <p>
                 Här kommer du snart kunna läsa mer om hur jag arbetar med webbutveckling och frilansuppdrag.
@@ -41,15 +41,15 @@ export default function StudioHero() {
 
 
           {/* Höger kolumn */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center -mt-18 md:mt-0">
 
             <div className="relative flex h-96 w-96 items-center justify-center md:h-[32rem] md:w-[32rem]">
 
               {/* Snurrande text */}
-              <div className="absolute inset-0 animate-[spin_28s_linear_infinite] text-industrial">
+              <div className="absolute inset-0 animate-[spin_30s_linear_infinite] text-industrial">
                 <svg
                   viewBox="0 0 100 100"
-                  className="h-full w-full overflow-visible"
+                  className="h-full w-full overflow-hidden"
                 >
                   <defs>
                     <path

@@ -1,11 +1,16 @@
 import { motion } from "motion/react";
 import AboutImage from "../assets/MimmieVanerhagAbout.png";
+import { ArrowUpRight } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { Smartphone } from "lucide-react";
+import { Venus } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function AboutMeSection() {
   return (
     <section className="bg-paper pt-24 md:pt-28 lg:pt-36 pb-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20">
           {/* Left column */}
           <motion.div
             className="md:col-span-4 md:justify-self-end"
@@ -16,28 +21,34 @@ export default function AboutMeSection() {
               delay: 0.1,
             }}
           >
-            <div className="w-[74%] ml-auto">
+            <div className="w-[74%] mx-auto md:ml-auto md:mr-0">
 
               <img
                 src={AboutImage}
                 alt="Mimmie Vänerhag"
-                className="w-full aspect-[4/5] object-cover mt-8"
+                className="w-full rounded-xs aspect-[4/5] object-cover mt-8"
               />
 
               {/* Kontaktuppgifter */}
-              <div className="mt-10">
-                <div className="space-y-2 text-charcoal/80">
-                  <p className="font-medium text-charcoal">Mimmie Vänerhag</p>
+              <div className="mt-6 md:mt-10">
+                <p className='font-medium md:font-bold text-xl pb-4 font-serif tracking-[0.01em]'>Mimmie Vänerhag</p>
+                <div className="space-y-2 font-medium text-charcoal/90">
 
-                  <p>1993 - 09 - 30</p>
+                  <p className="flex items-center gap-2"><Venus size={16}/>1993-09-30</p>
 
-                  <p>Norra kustvägen 1013, Nyhamnsläge</p>
+                  <p className="flex items-center gap-2"><MapPin size={16}/>Höganäs, Skåne</p>
 
-                  <p>0708 68 81 46</p>
+                  <p className="flex items-center gap-2"><Smartphone size={14}/>+46 708 68 81 46</p>
 
-                  <p>mimmie.vanerhag@gmail.com</p>
+                  <p className="flex items-center gap-2"><Mail size={14}/>mimmie.vanerhag@gmail.com</p>
 
-                  <a href="https://www.linkedin.com/in/mimmie-vanerhag/">
+                  <a
+                    href="https://www.linkedin.com/in/mimmie-vanerhag/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 transition-opacity hover:opacity-60"
+                  >
+                    <ArrowUpRight size={15} />
                     LinkedIn
                   </a>
                 </div>
@@ -47,7 +58,7 @@ export default function AboutMeSection() {
 
           {/* Right column */}
           <motion.div
-            className="md:col-span-8 mt-8"
+            className="md:col-span-8 md:mt-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -56,13 +67,13 @@ export default function AboutMeSection() {
               ease: [0.16, 1, 0.3, 1],
             }}
           >
-            <h2 className="font-serif tracking-[0.01em] text-3xl md:text-4xl text-charcoal leading-tight mb-10 max-w-3xl">
+            <h2 className="font-serif tracking-[0.01em] text-2xl md:text-4xl text-charcoal leading-tight mb-10 max-w-3xl">
               Frontendutvecklare med fokus på design, funkion och affärsförståelse.
             </h2>
 
             <div className="max-w-3xl h-px bg-industrial mb-10" />
 
-            <div className="max-w-3xl space-y-6 text-charcoal/80 text-lg leading-relaxed">
+            <div className="max-w-3xl space-y-6 text-charcoal/80 md:text-lg leading-relaxed">
               <p>
                 Jag är en driven och nyfiken person som efter flera år inom
                 restaurangbranschen och entreprenörskap valde att utbilda mig
@@ -80,7 +91,7 @@ export default function AboutMeSection() {
             <div className="pt-16 space-y-16">
               {/* Utbildning */}
               <div>
-                <h3 className="font-serif tracking-[0.01em] text-3xl text-charcoal mb-8">
+                <h3 className="font-serif tracking-[0.01em] text-2xl md:text-3xl text-charcoal mb-8">
                   Utbildning
                 </h3>
 
@@ -112,7 +123,7 @@ export default function AboutMeSection() {
 
               {/* Kompetenser */}
               <div>
-                <h3 className="font-serif tracking-[0.01em] text-3xl text-charcoal mb-8">
+                <h3 className="font-serif tracking-[0.01em] text-2xl md:text-3xl text-charcoal mb-8">
                   Kompetenser
                 </h3>
 
@@ -175,7 +186,7 @@ export default function AboutMeSection() {
 
               {/* Bakgrund */}
               <div>
-                <h3 className="font-serif tracking-[0.01em] text-3xl text-charcoal mb-8">
+                <h3 className="font-serif tracking-[0.01em] text-2xl md:text-3xl text-charcoal mb-8">
                   Bakgrund
                 </h3>
 
