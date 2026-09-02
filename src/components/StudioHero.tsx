@@ -10,7 +10,7 @@ export default function StudioHero() {
           {/* Vänster kolumn */}
           <div className="text-left">
 
-            <span className="text-industrial uppercase tracking-[0.2em] text-xs font-medium">
+            <span className="text-industrial uppercase tracking-[0.2em] text-xs font-bold">
               — Studio
             </span>
 
@@ -19,7 +19,7 @@ export default function StudioHero() {
                 Vänerhag Studio
               </span>
 
-              <span className="mt-2 block pt-4 text-3xl italic md:text-4xl">
+              <span className="mt-2 block pt-4 text-3xl italic tracking-[0.01em] md:text-4xl">
                 kommer snart
               </span>
             </h1>

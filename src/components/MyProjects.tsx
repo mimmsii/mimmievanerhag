@@ -57,8 +57,8 @@ const projectsData: Project[] = [
     builtWith: ['WordPress Divi', 'WooCommerce', 'CSS', 'JavaScript'],
     highlights: [
       'Vyer baserade på inloggad eller utloggad användare',
-      'Skräddarsydd CSS',
-      'Hantering av flöden för kund och företag'
+      'Unik QR-kod kopplad till användare',
+      'Skräddarsydd CSS'
     ],
     mainImage: returnitMain,
     secondaryImage: returnitSecondary,
@@ -138,9 +138,7 @@ export default function MyProjects() {
     <section className="w-full bg-paper pt-24 md:pt-28 lg:pt-36 pb-24">
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 space-y-24 md:space-y-36">
-          <span className="text-industrial uppercase tracking-[0.2em] text-xs font-medium block mb-16">
-            — Projekt
-          </span>
+
         {projectsData.map((project, index) => {
           const isReversed = index % 2 !== 0;
 

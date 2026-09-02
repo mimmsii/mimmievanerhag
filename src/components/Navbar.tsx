@@ -41,7 +41,7 @@ export default function Navbar() {
         {/* Logo / Home Link */}
         <Link
           to="/"
-          className="font-damion italic text-2xl tracking-tight text-charcoal"
+          className="font-damion font-thin italic text-2xl tracking-tight text-charcoal"
         >
           Mimmie Vänerhag
         </Link>

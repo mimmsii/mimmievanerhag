@@ -11,7 +11,7 @@ export default function Footer() {
           <h2 className="font-serif text-paper/95 text-3xl md:text-5xl lg:text-7xl mb-12 leading-none">
             Vill ni veta mer?
             <br />
-            <span className="text-paper italic lg:text-5xl">
+            <span className="text-paper font-serif tracking-[0.02em] font-thin italic lg:text-5xl">
               Kontakta mig gärna!
             </span>
           </h2>

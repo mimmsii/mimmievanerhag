@@ -17,9 +17,6 @@ export default function AboutMeSection() {
             }}
           >
             <div className="w-[74%] ml-auto">
-              <span className="text-industrial uppercase tracking-[0.2em] text-xs font-medium block mb-4">
-                — CV
-              </span>
 
               <img
                 src={AboutImage}
@@ -32,7 +29,7 @@ export default function AboutMeSection() {
                 <div className="space-y-2 text-charcoal/80">
                   <p className="font-medium text-charcoal">Mimmie Vänerhag</p>
 
-                  <p>1993.09.30</p>
+                  <p>1993 - 09 - 30</p>
 
                   <p>Norra kustvägen 1013, Nyhamnsläge</p>
 
@@ -59,7 +56,7 @@ export default function AboutMeSection() {
               ease: [0.16, 1, 0.3, 1],
             }}
           >
-            <h2 className="font-serif text-4xl md:text-4xl text-charcoal leading-tight mb-10 max-w-3xl">
+            <h2 className="font-serif tracking-[0.01em] text-3xl md:text-4xl text-charcoal leading-tight mb-10 max-w-3xl">
               Frontendutvecklare med fokus på design, funkion och affärsförståelse.
             </h2>
 
@@ -83,7 +80,7 @@ export default function AboutMeSection() {
             <div className="pt-16 space-y-16">
               {/* Utbildning */}
               <div>
-                <h3 className="font-serif text-3xl text-charcoal mb-8">
+                <h3 className="font-serif tracking-[0.01em] text-3xl text-charcoal mb-8">
                   Utbildning
                 </h3>
 
@@ -115,7 +112,7 @@ export default function AboutMeSection() {
 
               {/* Kompetenser */}
               <div>
-                <h3 className="font-serif text-3xl text-charcoal mb-8">
+                <h3 className="font-serif tracking-[0.01em] text-3xl text-charcoal mb-8">
                   Kompetenser
                 </h3>
 
@@ -178,7 +175,7 @@ export default function AboutMeSection() {
 
               {/* Bakgrund */}
               <div>
-                <h3 className="font-serif text-3xl text-charcoal mb-8">
+                <h3 className="font-serif tracking-[0.01em] text-3xl text-charcoal mb-8">
                   Bakgrund
                 </h3>
 
@@ -279,7 +276,7 @@ export default function AboutMeSection() {
                 duration: 0.8,
               }}
             >
-              <p className="font-serif text-xl md:text-2xl text-charcoal">
+              <p className="font-merriweather tracking-[0.01em] italic font-normal text-lg md:text-xl text-charcoal">
                 "Som utvecklare uppskattar jag att kombinera produktförståelse,
                 struktur och kreativitet för att skapa lösningar som människor
                 faktiskt vill använda."

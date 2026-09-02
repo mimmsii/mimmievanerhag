@@ -70,7 +70,7 @@ export default function Hero() {
               transition={{ duration: 0.4, delay: 0.2 }}
               className="mt-8 max-w-xl border-l-2 border-industrial pl-6"
             >
-              <p className="font-serif text-xl md:text-2xl text-charcoal leading-relaxed">
+              <p className="font-merriweather tracking-[0.01em] italic text-lg md:text-xl font-normal text-charcoal leading-relaxed">
                 "Jag drivs av att bygga digitala lösningar där design, teknik
                 och affärsnytta möts."
               </p>
@@ -80,7 +80,7 @@ export default function Hero() {
               initial={{ y: 80 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.4, delay: 0.3 }}
-              className="flex items-center gap-4 pl-6 pt-6"
+              className="flex items-center gap-4 pl-6 pt-8"
             >
               <Link
                 to="/cv"
