@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import HeroImage from '../assets/MimmieVanerhagHero6.png';
+import HeroImage from '../assets/MimmieVanerhagHero6.webp';
 
 export default function Hero() {
   const containerRef = useRef(null);

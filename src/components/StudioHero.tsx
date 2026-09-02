@@ -1,4 +1,4 @@
-import Studioimg from '../assets/monitor.jpg';
+import Studioimg from '../assets/monitor.webp';
 
 export default function StudioHero() {
   return (
