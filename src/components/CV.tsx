@@ -75,16 +75,16 @@ export default function AboutMeSection() {
 
             <div className="max-w-3xl space-y-6 text-charcoal/80 text-lg leading-relaxed">
               <p>
-                Jag är en driven och nyfiken person som efter flera år inom
-                restaurangbranschen och entreprenörskap valde att utbilda mig
-                till frontendutvecklare.
+                Jag är en engagerad och nyfiken person som efter 
+                flera år som egenföretagare tog klivet mot att utbilda mig till frontendutvecklare.
+                Som utvecklare uppskattar jag särskilt kombinationen av problemlösning, kreativitet och struktur.
+                För mig är varje detalj avgörande för att helheten i en digital produkt ska bli genomtänkt, stabil och hållbar.
               </p>
 
               <p>
-                Teknik har länge varit ett intresse, och jag motiveras av att
-                förstå hur saker fungerar och kan förbättras. Som utvecklare
-                kommer mina styrkor till sin rätt genom struktur, tydlighet och
-                en känsla för design som fyller ett behov.
+                Att ständigt utvecklas och lära mig nytt är en stor drivkraft för mig. 
+                Genom att använda AI som ett stöd i utvecklingsprocessen skapar jag mer effektiva arbetsflöden,
+                 och frigör tid och fokus för att ständigt växa i min roll och höja nivån på det jag levererar.
               </p>
             </div>
 
