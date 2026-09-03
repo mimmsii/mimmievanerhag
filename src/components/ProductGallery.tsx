@@ -68,7 +68,7 @@ export default function ProductGallery() {
                   <img
                     src={project.img}
                     alt={project.title}
-                    className="h-full w-full object-cover rounded-xs grayscale transition-all duration-700 group-hover:scale-103 group-hover:grayscale-0"
+                    className="h-full w-full object-cover rounded-xs md:grayscale transition-all duration-700 group-hover:scale-103 group-hover:grayscale-0"
                   />
                 </div>
 
@@ -82,8 +82,8 @@ export default function ProductGallery() {
                       {project.title}
                     </h3>
 
-                    <div className="flex h-5 w-5 mb-1 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm transition group-hover:bg-paper group-hover:text-charcoal">
-                      <ArrowUpRight size={15} />
+                    <div className="flex h-5 w-5 mb-1 items-center justify-center rounded-full border border-white/40 md:border-white/20 bg-white/10 backdrop-blur-sm transition group-hover:bg-paper text-paper/80 md:group-hover:text-charcoal">
+                      <ArrowUpRight size={14} />
                     </div>
                   </div>
                 </div>
