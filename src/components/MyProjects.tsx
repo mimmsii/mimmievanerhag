@@ -106,7 +106,7 @@ const projectsData: Project[] = [
     title: 'Swedlog',
     subtitle: 'En cookiebanner byggd åt företaget Swedlog',
     description:
-      'En webbplats som saknade cookiebanner behövde en manuellt byggd lösning. Fokus låg på att testa att cookies laddades korrekt beroende på användarens val.',
+      'En webbplats som saknade cookiebanner behövde en manuellt byggd lösning. Fokus låg på att testa så att cookies laddades korrekt beroende på användarens val.',
     builtWith: ['WebFlow', 'CSS', 'JavaScript'],
     highlights: [
       'Webbläsarens inspektera-verktyg',

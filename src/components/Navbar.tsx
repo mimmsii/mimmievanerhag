@@ -11,8 +11,8 @@ export default function Navbar() {
   const isHomePage = location.pathname === '/';
 
   const navItems = [
-    { label: 'Projekt', path: '/projekt' },
     { label: 'CV', path: '/cv' },
+    { label: 'Projekt', path: '/projekt' },
     { label: 'Studio', path: '/studio' },
   ];
 
