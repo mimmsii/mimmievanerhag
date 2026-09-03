@@ -40,7 +40,7 @@ export default function AboutMeSection() {
 
                   <p className="flex items-center gap-2"><Smartphone size={14}/>+46 708 68 81 46</p>
 
-                  <p className="flex items-center gap-2"><Mail size={14}/>mimmie.vanerhag@gmail.com</p>
+                  <p className="flex items-center gap-2"><Mail size={14}/>mimmie.vanerhag@gmail</p>
 
                   <a
                     href="https://www.linkedin.com/in/mimmie-vanerhag/"
