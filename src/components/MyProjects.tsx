@@ -206,17 +206,17 @@ export default function MyProjects() {
                   </p>
                 </div>
 
-                <p className="text-base font-light text-charcoal/70 leading-relaxed">
+                <p className="text-base font-light text-charcoal/80 leading-relaxed">
                   {project.description}
                 </p>
 
                 {/* Highlights */}
-                <div className="space-y-2 pt-4 border-t border-charcoal/10">
-                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/70 font-medium">
+                <div className="space-y-2 pt-4 border-t border-charcoal/20">
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/80 font-medium">
                     <MonitorCheck size={14} />
                     Highlights & Lärdomar
                   </div>
-                  <ul className="space-y-1.5 text-sm font-light text-charcoal/80">
+                  <ul className="space-y-1.5 pt-1 text-sm font-light text-charcoal/90">
                     {project.highlights.map((highlight, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <span className="text-charcoal/40 select-none">•</span>
@@ -228,7 +228,7 @@ export default function MyProjects() {
 
                 {/* Teknikstack */}
                 <div className="pt-2">
-                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/70 font-medium mb-3">
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-charcoal/80 font-medium mb-3">
                     <Layers size={13} />
                     Teknikstack
                   </div>
