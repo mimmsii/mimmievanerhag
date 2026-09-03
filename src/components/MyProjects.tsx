@@ -206,7 +206,7 @@ export default function MyProjects() {
                   </p>
                 </div>
 
-                <p className="text-sm md:text-base font-light text-charcoal/70 leading-relaxed">
+                <p className="text-base font-light text-charcoal/70 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -216,7 +216,7 @@ export default function MyProjects() {
                     <MonitorCheck size={14} />
                     Highlights & Lärdomar
                   </div>
-                  <ul className="space-y-1.5 text-xs md:text-sm font-light text-charcoal/80">
+                  <ul className="space-y-1.5 text-sm font-light text-charcoal/80">
                     {project.highlights.map((highlight, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <span className="text-charcoal/40 select-none">•</span>
