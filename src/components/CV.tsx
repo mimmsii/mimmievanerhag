@@ -32,7 +32,7 @@ export default function AboutMeSection() {
               {/* Kontaktuppgifter */}
               <div className="mt-6 md:mt-10">
                 <p className='font-medium md:font-bold text-xl pb-4 font-serif tracking-[0.01em]'>Mimmie Vänerhag</p>
-                <div className="space-y-2 font-medium text-charcoal/90">
+                <div className="space-y-2 font-normal text-charcoal/90">
 
                   <p className="flex items-center gap-2"><Venus size={16}/>1993-09-30</p>
 
