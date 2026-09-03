@@ -196,7 +196,7 @@ export default function AboutMeSection() {
                       <h4 className="font-medium text-charcoal">
                         LIA · Thorn Creative Agency
                       </h4>
-                      <span className="text-charcoal/50 text-sm pl-1">
+                      <span className="text-charcoal/50 text-sm md:pl-1">
                         2025–2026
                       </span>
                     </div>
@@ -214,7 +214,7 @@ export default function AboutMeSection() {
                       <h4 className="font-medium text-charcoal">
                         Egenföretagare · Brygghallen
                       </h4>
-                      <span className="text-charcoal/50 text-sm pl-1">
+                      <span className="text-charcoal/50 text-sm md:pl-1">
                         2022–2024
                       </span>
                     </div>
@@ -232,7 +232,7 @@ export default function AboutMeSection() {
                       <h4 className="font-medium text-charcoal">
                         Egenföretagare · C'est Bon Café & Blommor
                       </h4>
-                      <span className="text-charcoal/50 text-sm pl-1">
+                      <span className="text-charcoal/50 text-sm md:pl-1">
                         2018–2020
                       </span>
                     </div>
@@ -250,7 +250,7 @@ export default function AboutMeSection() {
                       <h4 className="font-medium text-charcoal">
                         Tulladministratör · Power International Logistics
                       </h4>
-                      <span className="text-charcoal/50 text-sm pl-1">
+                      <span className="text-charcoal/50 text-sm md:pl-1">
                         2016–2018
                       </span>
                     </div>
