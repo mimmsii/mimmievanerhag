@@ -21,7 +21,7 @@ export default function AboutMeSection() {
               delay: 0.1,
             }}
           >
-            <div className="w-[74%] mx-auto md:ml-auto md:mr-0">
+            <div className="w-full md:w-[74%] mx-auto md:ml-auto md:mr-0">
 
               <img
                 src={AboutImage}
@@ -40,7 +40,7 @@ export default function AboutMeSection() {
 
                   <p className="flex items-center gap-2"><Smartphone size={14}/>+46 708 68 81 46</p>
 
-                  <p className="flex items-center gap-2"><Mail size={14}/>mimmie.vanerhag@gmail</p>
+                  <p className="flex items-center gap-2"><Mail size={14}/>mimmie.vanerhag@gmail.com</p>
 
                   <a
                     href="https://www.linkedin.com/in/mimmie-vanerhag/"
