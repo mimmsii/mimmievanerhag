@@ -34,7 +34,7 @@ export default function AboutMeSection() {
                 <p className='font-medium md:font-bold text-xl pb-4 font-serif tracking-[0.01em]'>Mimmie Vänerhag</p>
                 <div className="space-y-2 font-normal text-charcoal/90">
 
-                  <p className="flex items-center gap-2"><Venus size={16}/>1993-09-30</p>
+                  <p className="flex items-center gap-2"><Venus size={16}/>33 år</p>
 
                   <p className="flex items-center gap-2"><MapPin size={16}/>Höganäs, Skåne</p>
 
