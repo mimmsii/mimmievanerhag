@@ -73,7 +73,7 @@ export default function AboutMeSection() {
 
             <div className="max-w-3xl h-px bg-industrial mb-10" />
 
-            <div className="max-w-3xl space-y-6 text-charcoal/80 text-base md:text-lg leading-relaxed">
+            <div className="max-w-3xl space-y-6 text-charcoal/80 text-lg leading-relaxed">
               <p>
                 Jag är en driven och nyfiken person som efter flera år inom
                 restaurangbranschen och entreprenörskap valde att utbilda mig

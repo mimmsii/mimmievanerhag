@@ -25,7 +25,7 @@ export default function StudioHero() {
             </h1>
 
             {/* Introduktion */}
-            <div className="mt-10 max-w-xl space-y-6 md:text-lg leading-relaxed text-charcoal/80">
+            <div className="mt-10 max-w-xl space-y-6 text-lg leading-relaxed text-charcoal/80">
 
               <p>
                 Här kommer du snart kunna läsa mer om hur jag arbetar med webbutveckling och frilansuppdrag.
