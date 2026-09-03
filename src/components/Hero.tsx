@@ -44,7 +44,7 @@ export default function Hero() {
       <div className="relative z-20 container mx-auto grid grid-cols-12 gap-4 px-6 md:px-12 lg:px-20 translate-y-6 md:translate-y-0">
         <div className="col-span-12 md:col-span-10 md:start-2">
 
-          <div className="overflow-hidden mb-2 -mt-20 md:-mt-0">
+          <div className="overflow-hidden mb-2 -mt-24 md:-mt-0">
             <motion.span
               initial={{ y: 80 }}
               animate={{ y: 0 }}
@@ -71,7 +71,7 @@ export default function Hero() {
               initial={{ y: 80 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
-              className="mt-22 md:mt-8 max-w-xl border-l-2 border-paper/80 md:border-industrial pl-6"
+              className="mt-18 md:mt-8 max-w-xl border-l-2 border-paper/80 md:border-industrial pl-6"
             >
               <p className="font-merriweather tracking-[0.01em] italic text-lg md:text-xl font-normal text-paper/80 md:text-charcoal leading-relaxed">
                 "Jag drivs av att bygga digitala lösningar där design, teknik

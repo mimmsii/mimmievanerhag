@@ -49,7 +49,11 @@ export default function Navbar() {
         {/* Logo / Home Link */}
         <Link
           to="/"
-          className="font-damion font-thin italic text-2xl tracking-tight text-charcoal"
+          className={`font-damion font-thin italic text-2xl tracking-tight transition-colors duration-300 ${
+            isHomePage && !isScrolled
+              ? 'text-paper md:text-charcoal'
+              : 'text-charcoal'
+          }`}
         >
           Mimmie Vänerhag
         </Link>
@@ -86,7 +90,9 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-charcoal"
+          className={`md:hidden transition-colors duration-300 ${
+            isHomePage && !isScrolled ? 'text-paper' : 'text-charcoal'
+          }`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X /> : <Menu />}
