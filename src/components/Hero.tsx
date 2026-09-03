@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-paper/10 via-transparent to-paper/60" />
 
           {/* Extra ljust lager – endast på mobil */}
-          <div className="absolute inset-0 z-10 bg-charcoal/70 md:bg-transparent" />
+          <div className="absolute inset-0 z-10 bg-charcoal/60 md:bg-transparent" />
 
         <motion.img
           src={HeroImage}
