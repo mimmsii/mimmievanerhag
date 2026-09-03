@@ -51,7 +51,7 @@ export default function Navbar() {
           to="/"
           className={`font-damion font-thin italic text-2xl tracking-tight transition-colors duration-300 ${
             isHomePage && !isScrolled
-              ? 'text-paper md:text-charcoal'
+              ? 'text-paper/90 md:text-charcoal'
               : 'text-charcoal'
           }`}
         >
@@ -91,7 +91,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle */}
         <button
           className={`md:hidden transition-colors duration-300 ${
-            isHomePage && !isScrolled ? 'text-paper' : 'text-charcoal'
+            isHomePage && !isScrolled ? 'text-paper/90' : 'text-charcoal'
           }`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >

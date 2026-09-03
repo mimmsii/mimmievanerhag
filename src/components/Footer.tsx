@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         
         {/* Main CTA */}
-        <div className="border-b border-paper/20 pb-24 mb-10">
+        <div className="border-b border-paper/40 pb-20 mb-10">
           <h2 className="font-serif text-paper/95 text-4xl md:text-5xl lg:text-7xl mb-12 leading-none">
             Vill ni veta mer?
             <br />
