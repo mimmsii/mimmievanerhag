@@ -91,7 +91,11 @@ export default function Navbar() {
         {/* Mobile Menu Toggle */}
         <button
           className={`md:hidden transition-colors duration-300 ${
-            isHomePage && !isScrolled ? 'text-paper/80' : 'text-charcoal'
+            isMenuOpen
+              ? 'text-charcoal'
+              : isHomePage && !isScrolled
+                ? 'text-paper/80'
+                : 'text-charcoal'
           }`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -104,7 +108,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="fixed inset-0 z-40 bg-paper flex flex-col items-center justify-center gap-8 md:hidden"
+          className="fixed inset-0 z-40 bg-paper flex flex-col items-center justify-center gap-10 -mt-18 md:hidden"
         >
           {navItems.map((item) => (
             <Link
