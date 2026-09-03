@@ -84,7 +84,7 @@ export default function AboutMeSection() {
               <p>
                 Att ständigt utvecklas och lära mig nytt är en stor drivkraft för mig. 
                 Genom att använda AI som ett stöd i utvecklingsprocessen skapar jag mer effektiva arbetsflöden,
-                 och frigör tid och fokus för att ständigt växa i min roll och höja nivån på det jag levererar.
+                 och frigör tid och fokus för att växa i min roll och höja nivån på det jag levererar.
               </p>
             </div>
 
