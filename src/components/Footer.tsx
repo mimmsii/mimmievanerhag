@@ -76,6 +76,11 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Copyright */}
+        <div className="text-paper/60 text-sm tracking-wide text-center">
+          © {new Date().getFullYear()} Mimmie Vänerhag
+        </div>
+
       </div>
     </footer>
   );
