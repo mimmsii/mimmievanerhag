@@ -104,7 +104,7 @@ const projectsData: Project[] = [
     tag: 'Cookiebanner',
     tagColor: 'text-[#295c00]',
     title: 'Swedlog',
-    subtitle: 'En cookiebanner byggd åt företaget Swedlog',
+    subtitle: 'En banner med funktion för hantering av cookies',
     description:
       'En webbplats som saknade cookiebanner behövde en manuellt byggd lösning. Fokus låg på att testa så att cookies laddades korrekt beroende på användarens val.',
     builtWith: ['WebFlow', 'CSS', 'JavaScript'],
