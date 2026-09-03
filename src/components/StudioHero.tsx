@@ -72,7 +72,7 @@ export default function StudioHero() {
               </div>
 
               {/* Bild */}
-              <div className="relative z-10 h-60 w-60 overflow-hidden rounded-full border-4 md:border-5 border-paper shadow-2xl md:h-96 md:w-96">
+              <div className="relative z-10 h-61 w-61 overflow-hidden rounded-full border-4 md:border-5 border-paper shadow-2xl md:h-96 md:w-96">
                 <img
                   src={Studioimg}
                   alt="Studio"
